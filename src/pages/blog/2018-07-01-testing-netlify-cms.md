@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Testing
 date: '2018-07-01T10:58:16+05:30'
-description: I am going to test netlify
+description: I am going to test now
 tags:
   - Testing
   - coding
