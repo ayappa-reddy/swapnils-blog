@@ -12,7 +12,7 @@ export const BlogPostTemplate = ({
   contentComponent,
   tags,
 }) => {
-  const PostContent = contentComponent || content;
+  const PostContent = contentComponent || Content;
 
   return (
     <div>
