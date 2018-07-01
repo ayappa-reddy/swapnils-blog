@@ -1,17 +1,20 @@
 backend:
-  name: github
-  repo: ayappa-reddy/swapnils-blog
+  name: git-gateway
+  branch: master
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: /img
 
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/pages/blog
     create: true
+    slug: {{year}}-{{month}}-{{day}}-{{slug}}
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
+      - { name: templateKey, label: Template Key, widget: 'hidden', default: 'blog-post' }
+      - { name: title, label: Title, widget: "string" }
+      - { name: date, label: Publish Date, widget: datetime }
+      - { name: description, label: Description, widget: text }
       - { name: body, label: Body, widget: markdown }
+      - { name: tags, label: Tags, widget: list }
