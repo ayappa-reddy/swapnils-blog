@@ -1,5 +1,25 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import styled from 'styled-components';
+
+const TagList = styled.ul`
+  list-style: none;
+  margin: 0;
+`;
+
+const TagLink = styled(Link)`
+  color: #333;
+`;
+
+const BrowseTagsLink = TagLink.extend``;
+
+const TagTitle = styled.h3`
+  color: #7c7575;
+`;
+
+const TagHeader = styled.h1`
+  color: #333;
+`;
 
 class TagRoute extends Component {
   render() {
@@ -8,9 +28,9 @@ class TagRoute extends Component {
 
     const postLinks = posts.map(({ node: post }) => (
       <li key={post.fields.slug}>
-        <Link to={post.fields.slug}>
-          <h2>{post.frontmatter.title}</h2>
-        </Link>
+        <TagLink to={post.fields.slug}>
+          <TagTitle>{post.frontmatter.title}</TagTitle>
+        </TagLink>
       </li>
     ));
 
@@ -23,10 +43,10 @@ class TagRoute extends Component {
 
     return (
       <div>
-        <h1>{tagHeader}</h1>
-        <ul>{postLinks}</ul>
+        <TagHeader>{tagHeader}</TagHeader>
+        <TagList>{postLinks}</TagList>
         <p>
-          <Link to="/tags/">Browse all tags</Link>
+          <BrowseTagsLink to="/tags/">Browse all tags</BrowseTagsLink>
         </p>
       </div>
     );
