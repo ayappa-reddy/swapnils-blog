@@ -1,5 +1,7 @@
-import Typography from "typography";
-import lawtonTheme from "typography-theme-lawton";
+import Typography from 'typography';
+import lawtonTheme from 'typography-theme-lawton';
+
+lawtonTheme.baseFontSize = '22px';
 
 const typography = new Typography(lawtonTheme);
 
