@@ -85,8 +85,8 @@ const Layout = ({ children, data }) => (
         meta={[
           {
             name: 'description',
-            content: data.site.siteMetadata.description
-          }
+            content: data.site.siteMetadata.description,
+          },
         ]}
       />
       <Header>
@@ -101,9 +101,6 @@ const Layout = ({ children, data }) => (
             <NavItem>
               <NavLink to="/about">About</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink to="/blog">Blog</NavLink>
-            </NavItem>
           </NavMenu>
         </NavBar>
       </Header>
@@ -113,7 +110,7 @@ const Layout = ({ children, data }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 };
 
 export default Layout;

@@ -69,9 +69,9 @@ export default class IndexPage extends Component {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
+      edges: PropTypes.array,
+    }),
+  }),
 };
 
 export const pageQuery = graphql`
@@ -79,7 +79,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-      limit: 10
     ) {
       edges {
         node {
