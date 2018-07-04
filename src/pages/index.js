@@ -23,7 +23,7 @@ const PostPreview = styled.article`
 `;
 
 const PostHeader = styled.header``;
-const PostContent = styled.section``;
+const PostInfo = styled.section``;
 
 const PostDate = styled.h3`
   color: #7c7575;
@@ -54,10 +54,10 @@ export default class IndexPage extends Component {
                 </PostHeading>
               </PostHeader>
 
-              <PostContent>
+              <PostInfo>
                 <PostExcerpt>{post.excerpt}</PostExcerpt>
                 <PostLink to={post.fields.slug}>Keep Reading</PostLink>
-              </PostContent>
+              </PostInfo>
             </PostPreview>
           ))}
         </PostsPreview>

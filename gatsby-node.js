@@ -30,6 +30,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             id
             frontmatter {
               tags
+              title
               templateKey
             }
             fields {
@@ -47,8 +48,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     const posts = result.data.allMarkdownRemark.edges;
 
-    posts.forEach(({ node }) => {
+    posts.forEach(({ node }, index) => {
       const { id, fields, frontmatter } = node;
+
+      const next = index === posts.length - 1 ? false : posts[index + 1].node;
+      const previous = index === 0 ? false : posts[index - 1].node;
 
       const blogPostTemplate = path.resolve(
         `src/templates/${String(frontmatter.templateKey)}.js`,
@@ -61,6 +65,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         // additional data passed via context is available as graphql variables
         context: {
           id,
+          previous,
+          next,
         },
       });
     });
