@@ -8,7 +8,7 @@ export default class IndexPage extends Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div style={{ margin: '0 auto', maxWidth: 600 }}>
+      <div style={{ margin: '0 auto', maxWidth: 900 }}>
         {posts.map(({ node: post }) => (
           <div
             key={post.id}
@@ -34,9 +34,9 @@ export default class IndexPage extends Component {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
+      edges: PropTypes.array
+    })
+  })
 };
 
 export const pageQuery = graphql`

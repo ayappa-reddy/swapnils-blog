@@ -1,16 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Navbar from '../components/Navbar';
+import Helmet from 'react-helmet';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-const TemplateWrapper = ({ children }) => (
+const Layout = ({ children, location, data }) => (
   <div>
-    <Navbar />
-    <div>{children()}</div>
+    <Helmet
+      title={data.site.siteMetadata.title}
+      meta={[
+        {
+          name: 'description',
+          content: data.site.siteMetadata.description
+        }
+      ]}
+    />
+    <Header />
+    <main>{children()}</main>
+    <Footer />
   </div>
 );
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+Layout.propTypes = {
+  children: PropTypes.func
 };
 
-export default TemplateWrapper;
+export default Layout;
+
+export const pageQuery = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`;

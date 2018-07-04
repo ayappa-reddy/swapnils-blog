@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Swapnil's Blog`
+    title: `Swapnil's Blog`,
+    description: `The blog of Aerospace Engineer, Swapnil Maddula`
   },
   plugins: [
     {
@@ -11,13 +12,7 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
-    },
-    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
