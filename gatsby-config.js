@@ -9,6 +9,7 @@ module.exports = {
       options: {
         name: "Swapnil's Blog",
         short_name: 'Swapnil',
+        description: 'The blog of Aerospace Engineer, Swapnil Maddula',
         start_url: '/',
         background_color: 'white',
         theme_color: '#fbf0f0',
@@ -40,6 +41,12 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
         ],
       },
     },
@@ -54,6 +61,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {

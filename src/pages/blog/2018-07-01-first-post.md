@@ -7,4 +7,5 @@ tags:
   - coding
   - life
 ---
+
 Life is good

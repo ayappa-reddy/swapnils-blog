@@ -3974,6 +3974,12 @@ gatsby-module-loader@^1.0.11:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
+gatsby-plugin-catch-links@^1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-1.0.24.tgz#78e5192ee59ed2ba3d92ac296a09510d9b452538"
+  dependencies:
+    babel-runtime "^6.26.0"
+
 gatsby-plugin-manifest@^1.0.27:
   version "1.0.27"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.27.tgz#148327ebfaf9a0a6791012cc5b5363356ee16ddf"
@@ -4075,6 +4081,16 @@ gatsby-remark-images@^1.5.67:
     lodash "^4.17.4"
     slash "^1.0.0"
     unist-util-select "^1.5.0"
+
+gatsby-remark-responsive-iframe@^1.4.20:
+  version "1.4.20"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-responsive-iframe/-/gatsby-remark-responsive-iframe-1.4.20.tgz#fd72b9ffee8846cb29e546090968bc9cf6d3c85f"
+  dependencies:
+    babel-runtime "^6.26.0"
+    bluebird "^3.5.0"
+    cheerio "^1.0.0-rc.2"
+    lodash "^4.17.4"
+    unist-util-visit "^1.1.1"
 
 gatsby-source-filesystem@^1.5.39:
   version "1.5.39"

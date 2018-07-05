@@ -14,7 +14,6 @@ lawtonTheme.overrideThemeStyles = () => ({
     },
   },
 });
-console.log(lawtonTheme);
 
 const typography = new Typography(lawtonTheme);
 
