@@ -1,13 +1,12 @@
 ---
 templateKey: blog-post
 title: Hello World
-date: 2018-07-01
+date: 2018-07-01T00:00:00.000Z
 description: Hello world baby
 tags:
   - testing
   - coding
 ---
-
 Bacon ipsum dolor amet ball tip corned beef fatback shank. Sirloin swine biltong, kielbasa buffalo landjaeger fatback shank prosciutto. Ball tip beef ribs spare ribs kevin. Jerky shank filet mignon turducken turkey rump. Frankfurter short loin boudin, sausage buffalo fatback rump ham hock short ribs tail cow bacon picanha filet mignon porchetta. Ham hock meatball shankle meatloaf, t-bone picanha pork belly cupim beef ribs chicken burgdoggen tail porchetta. Sirloin pig jowl, porchetta tongue pork shank buffalo.
 
 Pork belly cupim filet mignon capicola kielbasa, drumstick corned beef short ribs. Frankfurter corned beef jowl, brisket short loin ribeye rump meatloaf ham hock boudin strip steak ham alcatra jerky ground round. Tri-tip picanha shankle, tenderloin doner burgdoggen rump corned beef brisket beef ribs ham pastrami strip steak beef kielbasa. Turkey buffalo short loin, porchetta tri-tip leberkas corned beef shank burgdoggen. Pig bacon landjaeger, meatball spare ribs t-bone kielbasa ham hock chuck tri-tip. Buffalo tongue ribeye sirloin short loin shankle.
