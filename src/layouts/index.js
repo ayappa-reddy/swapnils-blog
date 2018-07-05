@@ -14,7 +14,8 @@ const Container = styled.div`
   display: flex;
   flex-flow: column nowrap;
   min-height: 100vh;
-  background-color: #fbf0f0;
+  // background-color: #fbf0f0;
+  background-color: #fff;
   max-width: 60rem;
   margin: 0rem auto;
   padding: 2rem;

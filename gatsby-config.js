@@ -47,20 +47,20 @@ module.exports = {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
+        omitGoogleFont: true,
       },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-manifest`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`, // make sure to keep it last in the array
   ],
 };
