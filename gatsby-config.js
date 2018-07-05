@@ -5,6 +5,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: "Swapnil's Blog",
+        short_name: 'Swapnil',
+        start_url: '/',
+        background_color: 'white',
+        theme_color: '#fbf0f0',
+        display: 'minimal-ui',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/`,
@@ -26,22 +37,24 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
-              // linkImagesToOriginal: false,
+              linkImagesToOriginal: false,
             },
           },
         ],
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-manifest`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
