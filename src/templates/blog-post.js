@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import { kebabCase } from 'lodash';
 import Content, { HTMLContent } from '../components/Content';
 import styled from 'styled-components';
+import { DiscussionEmbed } from 'disqus-react';
 
 const Post = styled.article``;
 
@@ -17,7 +18,9 @@ const Date = styled.p`
   color: #333;
 `;
 
-const Tags = styled.section``;
+const Tags = styled.section`
+  margin-bottom: 1.5rem;
+`;
 
 const TagHeading = styled.h4`
   letter-spacing: 0.4rem;
@@ -64,6 +67,7 @@ export const BlogPostTemplate = ({
   tags,
   previousPost,
   nextPost,
+  disqusConfig
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -105,6 +109,7 @@ export const BlogPostTemplate = ({
           </TagList>
         </Tags>
       ) : null}
+      <DiscussionEmbed shortname={'swapnils-blog'} config={disqusConfig} />
     </Post>
   );
 };
@@ -119,6 +124,10 @@ BlogPostTemplate.propTypes = {
 const BlogPost = props => {
   const { markdownRemark: post } = props.data;
   const { previous, next } = props.pathContext;
+  const disqusConfig = {
+    identifier: props.pathContext.id,
+    title: post.frontmatter.title,
+  };
   return (
     <BlogPostTemplate
       title={post.frontmatter.title}
@@ -129,6 +138,7 @@ const BlogPost = props => {
       tags={post.frontmatter.tags}
       previousPost={previous}
       nextPost={next}
+      disqusConfig={disqusConfig}
     />
   );
 };

@@ -12,6 +12,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "disqus-react": "^1.0.5",
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-catch-links": "^1.0.24",
