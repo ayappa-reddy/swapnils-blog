@@ -13,8 +13,6 @@ Pork belly cupim filet mignon capicola kielbasa, drumstick corned beef short rib
 
 Turducken jowl prosciutto salami porchetta. Prosciutto filet mignon pastrami strip steak. Tail pork chop pancetta bresaola. Doner hamburger tri-tip strip steak landjaeger kielbasa prosciutto sirloin frankfurter short ribs swine jowl. Short ribs chicken brisket kielbasa doner.
 
-![](/img/image1.jpg)
-
 Short loin pork belly capicola kevin tail prosciutto pig salami buffalo beef. Sausage porchetta hamburger tri-tip, kielbasa jowl turkey fatback ball tip prosciutto. Chuck kevin ham hock t-bone pork meatball burgdoggen salami jowl. Chicken buffalo drumstick pork belly, kielbasa pork loin shank ham beef biltong leberkas ground round turducken. Leberkas frankfurter alcatra strip steak fatback tri-tip pork pig pastrami jowl kielbasa picanha ham hock ham.
 
 Rump salami tri-tip, shoulder ham hock andouille t-bone. Shoulder shank venison chicken, pork loin tri-tip tenderloin ham pancetta. Ground round tri-tip ham boudin bresaola beef ribs short ribs ball tip prosciutto rump shank flank ribeye. Leberkas cow tongue, filet mignon buffalo picanha ball tip sirloin pork jerky chuck pork belly jowl pig. Chicken tail filet mignon frankfurter picanha, turkey swine salami brisket cow biltong fatback porchetta.
