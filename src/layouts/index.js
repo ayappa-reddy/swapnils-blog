@@ -8,6 +8,10 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.div`
   padding: 2rem;
   background-image: ${topography('#8817ca', 0.15)};
+
+  @media only screen and (max-width: 768px) {
+    padding: 0.7rem;
+  }
 `;
 
 const Container = styled.div`

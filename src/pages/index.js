@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import 'typeface-open-sans';
+import 'typeface-roboto';
 
 const LatestPosts = styled.section``;
 
@@ -91,7 +93,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
           }
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 300)
         }
       }
     }
